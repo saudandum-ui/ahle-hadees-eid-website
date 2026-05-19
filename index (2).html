@@ -1,0 +1,15031 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahle Hadees | Eid-ul-Adha 2026</title>
+
+<meta name="theme-color" content="#0d3b2e">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+:root{
+
+--primary:#0d3b2e;
+--secondary:#ffd369;
+--light:#f9f8f3;
+--dark:#061f17;
+--text:#222;
+--white:#fff;
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--text);
+overflow-x:hidden;
+
+}
+
+/* ===== DARK MODE ===== */
+
+body.dark{
+
+background:#081c15;
+color:white;
+
+}
+
+body.dark .card,
+body.dark .contact-box,
+body.dark .floating-box,
+body.dark .counter,
+body.dark .prayer-card,
+body.dark .counter-box{
+
+background:#10251d;
+color:white;
+
+}
+
+body.dark p{
+color:#ddd;
+}
+
+/* ===== LOADER ===== */
+
+#loader{
+
+position:fixed;
+inset:0;
+
+background:#061f17;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+.spinner{
+
+width:70px;
+height:70px;
+
+border:6px solid rgba(255,255,255,0.2);
+border-top:6px solid #ffd369;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+background:var(--primary);
+border-radius:50px;
+}
+
+/* ===== HEADER ===== */
+
+header{
+
+width:100%;
+position:fixed;
+top:0;
+left:0;
+z-index:1000;
+
+padding:18px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(14px);
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:800;
+color:white;
+
+}
+
+.logo span{
+color:var(--secondary);
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+list-style:none;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:16px;
+font-weight:500;
+transition:0.3s;
+
+}
+
+nav ul li a:hover{
+color:var(--secondary);
+}
+
+/* ===== MOBILE MENU ===== */
+
+.menu-btn{
+
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:140px 20px 100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+.hero-content{
+
+max-width:950px;
+animation:fadeUp 1.2s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,0.12);
+
+border-radius:50px;
+
+color:#fff;
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:88px;
+color:white;
+line-height:1.1;
+margin-bottom:25px;
+font-weight:800;
+
+}
+
+.hero h1 span{
+color:var(--secondary);
+}
+
+.hero p{
+
+font-size:22px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:45px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.hero-btn{
+
+padding:18px 42px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-size:17px;
+font-weight:700;
+
+transition:0.4s;
+
+display:inline-block;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+color:#111;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+background:white;
+
+}
+
+.secondary-btn{
+
+border:2px solid rgba(255,255,255,0.2);
+color:white;
+
+background:rgba(255,255,255,0.05);
+
+}
+
+.secondary-btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/* ===== FLOATING BOX ===== */
+
+.floating-box{
+
+width:88%;
+margin:auto;
+
+margin-top:-70px;
+
+background:white;
+
+border-radius:35px;
+
+padding:40px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+position:relative;
+z-index:10;
+
+box-shadow:0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+.float-card{
+
+text-align:center;
+padding:15px;
+
+transition:0.4s;
+
+border-radius:25px;
+
+}
+
+.float-card:hover{
+
+background:#faf7ef;
+transform:translateY(-8px);
+
+}
+
+.float-card i{
+
+font-size:50px;
+color:var(--primary);
+margin-bottom:18px;
+
+}
+
+.float-card h3{
+
+font-size:24px;
+color:var(--primary);
+margin-bottom:10px;
+
+}
+
+.float-card p{
+
+color:#666;
+line-height:1.7;
+
+}
+
+/* ===== SECTION ===== */
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+text-align:center;
+margin-bottom:70px;
+
+}
+
+.title h2{
+
+font-size:54px;
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.title p{
+
+font-size:18px;
+color:#666;
+
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+padding:45px 35px;
+
+border-radius:30px;
+
+transition:0.5s;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+.card.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.card i{
+
+font-size:55px;
+color:var(--primary);
+margin-bottom:25px;
+
+}
+
+.card h3{
+
+font-size:28px;
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+.card p{
+
+line-height:1.9;
+color:#555;
+
+}
+
+/* ===== QUOTE ===== */
+
+.quote{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.quote h2{
+
+font-size:44px;
+line-height:1.8;
+margin-bottom:20px;
+
+}
+
+.quote p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+/* ===== PRAYER ===== */
+
+.prayer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(180px,1fr));
+
+gap:25px;
+
+}
+
+.prayer-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.4s;
+
+}
+
+.prayer-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.prayer-card h3{
+
+font-size:28px;
+margin-bottom:10px;
+
+color:var(--primary);
+
+}
+
+.prayer-card p{
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== GALLERY ===== */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.gallery-box{
+
+overflow:hidden;
+border-radius:30px;
+position:relative;
+
+}
+
+.gallery img{
+
+width:100%;
+height:370px;
+
+object-fit:cover;
+
+transition:0.6s;
+
+}
+
+.gallery-box:hover img{
+
+transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+position:absolute;
+inset:0;
+
+background:linear-gradient(to top,rgba(0,0,0,0.7),transparent);
+
+display:flex;
+align-items:flex-end;
+
+padding:25px;
+
+color:white;
+
+font-size:22px;
+font-weight:600;
+
+}
+
+/* ===== HADITH ===== */
+
+.hadith-slider{
+
+padding:120px 10%;
+
+background:
+linear-gradient(135deg,#0d3b2e,#061f17);
+
+color:white;
+
+text-align:center;
+
+}
+
+.hadith{
+
+display:none;
+
+}
+
+.hadith.active{
+
+display:block;
+
+animation:fade 1s ease;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hadith h2{
+
+font-size:40px;
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+/* ===== COUNTER ===== */
+
+.counter{
+
+background:white;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+text-align:center;
+
+}
+
+.counter-box{
+
+padding:30px;
+border-radius:25px;
+
+transition:0.4s;
+
+}
+
+.counter-box:hover{
+
+background:#faf7ef;
+transform:translateY(-6px);
+
+}
+
+.counter-box h1{
+
+font-size:60px;
+color:var(--primary);
+
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+
+background:#efe9dd;
+
+}
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.contact-info h2{
+
+font-size:48px;
+color:var(--primary);
+margin-bottom:20px;
+
+}
+
+.contact-box{
+
+background:white;
+
+padding:45px;
+
+border-radius:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.1);
+
+}
+
+.input-group{
+
+margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:18px 20px;
+
+border:none;
+
+background:#f5f5f5;
+
+border-radius:16px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+textarea{
+
+height:150px;
+resize:none;
+
+}
+
+.send-btn{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+background:var(--primary);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+border-radius:60px;
+
+cursor:pointer;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+background:var(--dark);
+
+padding:70px 8% 40px;
+
+text-align:center;
+color:white;
+
+}
+
+.socials{
+
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:25px;
+
+}
+
+.socials i{
+
+width:58px;
+height:58px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.08);
+
+font-size:22px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+.socials i:hover{
+
+background:var(--secondary);
+color:black;
+
+}
+
+/* ===== BUTTONS ===== */
+
+.theme-toggle{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+width:60px;
+height:60px;
+
+background:var(--secondary);
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+.top-btn{
+
+display:none;
+
+position:fixed;
+bottom:95px;
+right:20px;
+
+width:55px;
+height:55px;
+
+background:var(--primary);
+color:white;
+
+border-radius:50%;
+
+justify-content:center;
+align-items:center;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+gap:18px;
+
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.quote h2{
+font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+background:#0d3b2e;
+padding:20px;
+border-radius:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== LOADER ===== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+<div class="logo">
+Ahle<span>Hadees</span>
+</div>
+
+<div class="menu-btn" id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#">होम</a></li>
+<li><a href="#fazail">फ़ज़ाइल</a></li>
+<li><a href="#qurbani">कुर्बानी</a></li>
+<li><a href="#gallery">गैलरी</a></li>
+<li><a href="#contact">संपर्क</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ===== HERO ===== -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+☪ Eid-ul-Adha Special 2026
+</div>
+
+<h1>
+
+ईदुल अज़हा
+<span>2026</span>
+
+</h1>
+
+<p>
+
+कुरआन और सही हदीस की रोशनी में
+ईदुल अज़हा की फ़ज़ीलत,
+कुर्बानी के मसाइल और इस्लामी जानकारी
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="hero-btn primary-btn">
+पैम्फलेट देखें
+</a>
+
+<a href="#" class="hero-btn secondary-btn">
+इस्लामी जानकारी
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FLOATING ===== -->
+
+<div class="floating-box">
+
+<div class="float-card">
+
+<i class="fa-solid fa-mosque"></i>
+
+<h3>नमाज़</h3>
+
+<p>ईद की नमाज़ का सही तरीका</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-cow"></i>
+
+<h3>कुर्बानी</h3>
+
+<p>सही जानवर और मसाइल</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-book-quran"></i>
+
+<h3>हदीस</h3>
+
+<p>सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="float-card">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+<h3>सदक़ा</h3>
+
+<p>गरीबों की मदद</p>
+
+</div>
+
+</div>
+
+<!-- ===== INFO ===== -->
+
+<section class="section" id="fazail">
+
+<div class="title">
+
+<h2>इस्लामी जानकारी</h2>
+
+<p>अहले हदीस के अनुसार सही जानकारी</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-star-and-crescent"></i>
+
+<h3>कुर्बानी की फ़ज़ीलत</h3>
+
+<p>
+
+कुर्बानी अल्लाह की रज़ा पाने
+और सुन्नते इब्राहीमी को ज़िंदा करने का जरिया है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-moon"></i>
+
+<h3>ईद की नमाज़</h3>
+
+<p>
+
+ईद की नमाज़ खुशी,
+भाईचारे और अल्लाह की बंदगी का दिन है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-hands-praying"></i>
+
+<h3>मांस की तक्सीम</h3>
+
+<p>
+
+जरूरतमंदों और गरीबों में
+मांस बांटना इस्लाम की खूबसूरत तालीम है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== QUOTE ===== -->
+
+<section class="quote">
+
+<h2>
+
+“अल्लाह तक न उनका गोश्त पहुँचता है
+और न उनका खून,
+बल्कि तुम्हारा तक़वा पहुँचता है”
+
+</h2>
+
+<p>
+— सूरह अल-हज्ज 22:37
+</p>
+
+</section>
+
+<!-- ===== QURBANI ===== -->
+
+<section class="section" id="qurbani">
+
+<div class="title">
+
+<h2>कुर्बानी के मसाइल</h2>
+
+<p>कुरआन और सही हदीस की रोशनी में</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>सही जानवर</h3>
+
+<p>
+
+ऊंट, गाय, भैंस, बकरा और भेड़ की कुर्बानी जायज़ है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>वक्त</h3>
+
+<p>
+
+ईद की नमाज़ के बाद से 13 ज़िलहिज्जा सूर्यास्त तक कुर्बानी की जा सकती है।
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-scale-balanced"></i>
+
+<h3>तक्सीम</h3>
+
+<p>
+
+गोश्त को गरीबों और रिश्तेदारों में बांटना बेहतर है।
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== PRAYER ===== -->
+
+<section class="section">
+
+<div class="title">
+
+<h2>नमाज़ के वक़्त</h2>
+
+<p>आज के नमाज़ टाइम</p>
+
+</div>
+
+<div class="prayer-grid">
+
+<div class="prayer-card">
+<h3>फ़ज्र</h3>
+<p>4:45 AM</p>
+</div>
+
+<div class="prayer-card">
+<h3>ज़ुहर</h3>
+<p>12:15 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>असर</h3>
+<p>4:45 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>मग़रिब</h3>
+<p>6:55 PM</p>
+</div>
+
+<div class="prayer-card">
+<h3>इशा</h3>
+<p>8:20 PM</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== HADITH ===== -->
+
+<section class="hadith-slider">
+
+<div class="hadith active">
+
+<h2>
+“तुम में सबसे बेहतर वह है जो कुरआन सीखे और सिखाए”
+</h2>
+
+<p>
+— सहीह बुखारी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“अल्लाह रहम करने वालों पर रहम करता है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+<div class="hadith">
+
+<h2>
+“मुस्कुराना भी सदक़ा है”
+</h2>
+
+<p>
+— तिर्मिज़ी
+</p>
+
+</div>
+
+</section>
+
+<!-- ===== GALLERY ===== -->
+
+<section class="section" id="gallery">
+
+<div class="title">
+
+<h2>इस्लामिक गैलरी</h2>
+
+<p>ईद और मस्जिद की खूबसूरत तस्वीरें</p>
+
+</div>
+
+<div class="gallery">
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1519817650390-64a93db511aa?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+ईद की रौनक
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+मस्जिद
+</div>
+
+</div>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=1200&auto=format&fit=crop">
+
+<div class="gallery-overlay">
+इस्लामी माहौल
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== COUNTER ===== -->
+
+<section class="counter">
+
+<div class="counter-box">
+
+<h1>100+</h1>
+
+<p>इस्लामिक पोस्ट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>50+</h1>
+
+<p>पैम्फलेट</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>5000+</h1>
+
+<p>विज़िटर</p>
+
+</div>
+
+<div class="counter-box">
+
+<h1>24/7</h1>
+
+<p>ऑनलाइन सेवा</p>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+
+<section class="section contact" id="contact">
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h2>संपर्क करें</h2>
+
+<p>
+
+अगर आपके पास कोई सवाल,
+राय या इस्लामी जानकारी है
+तो हमसे संपर्क करें।
+
+</p>
+
+<br>
+
+<p>📍 India</p>
+<p>📞 +91 9876543210</p>
+<p>✉️ ahlehadees@gmail.com</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="input-group">
+<input type="text" placeholder="आपका नाम">
+</div>
+
+<div class="input-group">
+<input type="email" placeholder="आपका ईमेल">
+</div>
+
+<div class="input-group">
+<textarea placeholder="अपना संदेश लिखें"></textarea>
+</div>
+
+<button class="send-btn">
+संदेश भेजें
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+<h2>
+Ahle Hadees Islamic Center
+</h2>
+
+<p>
+
+"कुरआन और सही हदीस को समझना और फैलाना"
+
+</p>
+
+<p style="margin-top:15px;color:#bbb;">
+© 2026 All Rights Reserved
+</p>
+
+<div class="socials">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fa-brands fa-telegram"></i>
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</div>
+
+</footer>
+
+<!-- ===== BUTTONS ===== -->
+
+<div class="theme-toggle" id="themeBtn">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div class="top-btn" id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</div>
+
+<!-- ===== AUDIO ===== -->
+
+<audio loop controls
+style="position:fixed;bottom:20px;left:20px;z-index:9999;">
+
+<source src="nasheed.mp3" type="audio/mp3">
+
+</audio>
+
+<!-- ===== JAVASCRIPT ===== -->
+
+<script>
+
+/* ===== LOADER ===== */
+
+window.addEventListener("load",()=>{
+
+document.getElementById("loader")
+.style.display = "none";
+
+});
+
+/* ===== MOBILE MENU ===== */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.querySelector("nav");
+
+menuBtn.onclick = () => {
+
+nav.classList.toggle("active");
+
+};
+
+/* ===== DARK MODE ===== */
+
+const themeBtn =
+document.getElementById("themeBtn");
+
+themeBtn.onclick = () => {
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+}else{
+
+localStorage.setItem("theme","light");
+
+}
+
+};
+
+window.onload = () => {
+
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+}
+
+};
+
+/* ===== TOP BUTTON ===== */
+
+const topBtn =
+document.getElementById("topBtn");
+
+window.onscroll = () => {
+
+if(window.scrollY > 400){
+
+topBtn.style.display = "flex";
+
+}else{
+
+topBtn.style.display = "none";
+
+}
+
+};
+
+topBtn.onclick = () => {
+
+window.scrollTo({
+
+top:0,
+behavior:'smooth'
+
+});
+
+};
+
+/* ===== HADITH SLIDER ===== */
+
+const hadiths =
+document.querySelectorAll(".hadith");
+
+let current = 0;
+
+setInterval(()=>{
+
+hadiths[current]
+.classList.remove("active");
+
+current++;
+
+if(current >= hadiths.length){
+
+current = 0;
+
+}
+
+hadiths[current]
+.classList.add("active");
+
+},4000);
+
+/* ===== REVEAL ANIMATION ===== */
+
+const reveals =
+document.querySelectorAll(".card");
+
+window.addEventListener("scroll",()=>{
+
+reveals.forEach(reveal=>{
+
+const windowHeight =
+window.innerHeight;
+
+const revealTop =
+reveal.getBoundingClientRect().top;
+
+if(revealTop < windowHeight - 100){
+
+reveal.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
